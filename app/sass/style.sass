@@ -3,24 +3,894 @@
 
 body 
 	font-family: 'Roboto', sans-serif
+	font-size: 18px
+	//position: relative
+h2 
+	font-size: 48px 
+	text-align: center	
+h3 
+	font-size: 24px 
+	text-align: center
+	padding-top: 50px
+.header.sticky
+	background: #fff
+	left: 0
+	width: 100vw
+	display: flex
+	justify-content: center
+	padding-top: 30px
+	padding-bottom: 15px
+	padding-left: 0
+	.logo 
+		top: 15px
+
 .header 
-	height: 100vh
-	width: 100%;
+	position: fixed 
+	top: 0
+	left: 0
+	width: 100vw
+	z-index: 9999
+	padding-top: 30px
+	transition: all 0.5s
+	//padding-left: 20px
+	display: flex
+	justify-content: center		
+.menu 
+	width: 53%
+	ul 
+		list-style: none 
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-left: 0
+		li 
+			a 
+				font-size: 18px
+				color: #000
+				text-decoration: none
+				transition: all 0.2s
+
+			a:hover 
+				border-bottom: 1px solid $red
+				text-shadow: 0 0 0px #000, 0 0 0px #000
+
+		// li:nth-child(5) a:hover
+		// 	border-bottom: none
+		// li:nth-child(5) img:hover 
+		// 	transform: scale(1.05)
+		// 	transition: all 0.5s
+		li:nth-child(4) 
+			margin-right: 200px
+
+		// li:last-child a:hover
+		// 	border-bottom: none
+.facebook a:before
+	font-family: 'icomoon' 
+	content: "\ea91"
+	font-size: 18px
+.facebook:hover a:before
+	color: $red
+.facebook a 
+	color: #000
+	padding-left: 20px
+	position: relative
+	top: 0px
+.btn_menu
+	width: 50px
+	height: 23px
+	outline: none
+	border: none
+	background-color: transparent
+	display: none
+	cursor: pointer
+	margin-top: 7px
+	position: fixed
+	right: 10px
+	// margin-top: px
+
+
+
+	.btn_row
+		height: 2px
+		width: 30px
+		background-color: #000
+		margin-bottom: 5px
+		display: block
+.btn_menu.active  
+	margin-top: 5px
+
+	span:nth-child(2)
+		display: none
+	span:first-child
+		transform: rotate(45deg)
+	span:last-child
+		transform: rotate(-45deg)
+		margin-top: -7px
+
+.logo 
+	position: absolute
+	padding-left: 50px
+	top: 15px
+	img 
+		width: 170px
+		transition: all 0.5s
+.logo:hover 
+	img 
+		transform: scale(1.1)
+.main
+	//min-height: 950px
 	backgroung-position: center
 	background-repeat: no-repeat
-	background-size: 
-	display: flex
-	.container-fluid
-		background: #000
+	background-size: caver
+	//position: relative
+	.mobil-img-wrap
+		display: none
+
+	
+	.wrapper
+		display: flex
+	.container-fluid		
 		width: 58%
-	.wrapper 
-		background: red
+		padding-top: 70px
+		// .top_header.sticky
+		// 	background: #fff
+		// 	left: 0
+		// 	width: 100vw
+		// 	display: flex
+		// 	justify-content: center
+		// 	padding-top: 15px
+		// 	padding-left: 0
+
+		// .top_header 
+		// 	position: fixed 
+		// 	top: 0
+		// 	width: 100%
+		// 	z-index: 9999
+		// 	padding-top: 30px
+		// 	transition: all 0.5s
+		// 	padding-left: 20px
+			
+
+				
+
+
+			
+		// .menu 
+		// 	width: 58%
+		// 	ul 
+		// 		list-style: none 
+		// 		display: flex
+		// 		justify-content: space-between
+		// 		align-items: center
+		// 		padding-left: 0
+		// 		li 
+		// 			a 
+		// 				font-size: 18px
+		// 				color: #000
+		// 				text-decoration: none
+		// 				transition: all 0.2s
+
+		// 			a:hover 
+		// 				border-bottom: 1px solid $red
+		// 				text-shadow: 0 0 0px #000, 0 0 0px #000
+
+		// 		li:nth-child(5) a:hover
+		// 			border-bottom: none
+		// 		li:nth-child(5) img:hover 
+		// 			transform: scale(1.05)
+		// 			transition: all 0.5s
+
+		// 		li:last-child a:hover
+		// 			border-bottom: none
+		// 		li:last-child a:before
+		// 			font-family: 'icomoon' 
+		// 			content: "\ea91"
+		// 			font-size: 18px
+		// 			align-self: flex-end
+
+				
+
+
+
+
+	.right-wrapper 
 		width: 21%
+		padding-top: 95px
+		display: flex
+		flex-direction: column
+		height: 100%
+		padding-left: 20px
+		padding-right: 20px
+
+		align-items: center
+		background: rgba(0, 0, 0, 0.25)
+		
+		img 
+			width: 100%	
+			margin: 0 auto	
+
+		a 
+			padding-top: 20px 
+			color: red	
+			padding-bottom: 37px
+			text-decoration: none
+			transition: all .3s
+			font-weight: bold
+		a:hover 
+			text-shadow: 0 0 .05px $red, 0 0 .05px $red
+		
 	.left-path 
 		width: 21%
-		background: blue
+		
+		h1
+			position: absolute
+			top: 30%
+			left: 100px
+			font-size: 72px
+			line-height: 83px
+			font-family: 'Gotham Pro', sans-serif
+		.btn 
+			background: $red
+			height: 50px 
+			width: 200px
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 520px
+			margin-left: 100px
+			cursor: pointer
+			transition: all 0.5s
+			border-radius: 5px
+			a
+				color: #fff
+				font-size: 18px
+				text-decoration: none
+				cursor: pointer
+		.btn:hover 
+			transform: scale(1.1)
+.last-news
+
+	
+	width: 100%
+	//position: absolute
+	//bottom: 0
+	
+
+	.title
+		background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 1) 100%)
+		opacity: 0.6
+		font-size: 24px
+		color: #fff
+		padding: 24px
+		padding-left: 50px
+	.col-md-3 
+		flex-direction: column
+		padding-left: 50px
+		padding-top: 17px
+		padding-bottom: 17px
+		color: #fff
+		transition: all 2s
+
+		box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.15)
+		a 
+			color: #fff
+			text-decoration: none
+		.data1
+			color: $red
+	.col-md-3:first-child
+		background-color: #000 
+		opacity: 1
+	.col-md-3:nth-child(2)
+		background-color: #33CCCC
+	.col-md-3:nth-child(3)
+		background-color: #000
+	.col-md-3:nth-child(4)
+		background-color: #fff
+	.col-md-3:nth-child(4) a
+		color: #000
+	.col-md-3:hover 
+		position: relative
+		margin-top: -83px
+		transition: all 1s
+		padding-top: 50px
+		padding-bottom: 50px
+.about 
+	padding-top: 100px
+	.right-wrapper,
+	.left-path
+		width: 21%
+		//display: flex
+		//flex-direction: column
+		//justify-content: center
+		//align-items: center
+		.wpapper 
+			padding: 10%
+			margin-bottom: 30px
+			display: flex
+			justify-content: center
+		img 
+			width: 80%
+			height: 90%
+			display: block 
+			margin: 0 auto
+			margin-bottom: 30px
+	.wrapper
+		display: flex
+	.container-fluid		
+		width: 58%
+
+	.left-path 
+		width: 21%
+	
+	.col-md-4 
+		text-align: center
+		img
+			width: 100%
+			padding-bottom: 20px
+		a 
+			
+			color: #000
+.partners 
+	text-align: center
+	padding-top: 100px
+	.wrapper
+		display: flex
+	.container-fluid		
+		width: 58%
+		.col-md-2 
+			padding-top: 30px
+			padding-bottom: 30px
+			transition: all 0.5s
+
+			img 
+				width: 100%
+				transition: all 0.5s
+
+		.col-md-2:hover img
+			transform: scale(1.1) 
 
 
+	.right-wrapper 
+		width: 21%
+		.wpapper 
+			padding: 10%
+		img
+			width: 90%
+	.left-path 
+		width: 21%
+	.right-wrapper,
+	.left-path
+		width: 21%
+		//display: flex
+		//flex-direction: column
+		//justify-content: center
+		//align-items: center
+		.wpapper 
+			padding: 10%
+			margin-bottom: 30px
+			display: flex
+			justify-content: center
+		img 
+			width: 80%
+			height: 90%
+			display: block 
+			margin: 0 auto
+			margin-bottom: 30px
+.contacts 
+	text-align: center
+	padding: 100px 0
+
+	// min-height: 1080px	
+	p 
+		max-width: 700px
+		margin: 0 auto
+	.form-box 
+		max-width: 540px 
+		margin: 0 auto
+		div 
+			display: flex
+			justify-content: space-between
+			margin: 20px auto
+		label 
+			color: #fff
+		input 
+			width: 350px
+			height: 50px
+			border-radius: 5px
+			background-color: transparent
+			border: 1px solid #fff
+			padding-left: 30px
+			padding-right: 30px
+			outline: none
+			color: #fff
+		::-webkit-input-placeholder
+			color: #fff
+		::-moz-placeholder
+			color: #fff
+		:-moz-placeholder
+			color: #fff
+		:-ms-input-placeholder
+			color: #fff
+		textarea 
+			width: 350px
+			border-radius: 5px
+			background-color: transparent
+			border: 1px solid #fff
+			padding-left: 30px
+			padding-right: 30px
+			outline: none
+			height: 100px
+			//color: #fff
+			padding-top: 20px
+		input[type="submit"]
+			background: $red
+			border: none 
+			width: 200px
+			border-radius: 0
+			font-weight: bold
+			cursor: pointer
+			margin-top: 30px
+			margin-bottom: 30px
+			transition: all 0.5s
+			border-radius: 5px
+		input[type="submit"]:hover 
+			transform: scale(1.1)
+	.row 
+		//max-width: 540px 
+		color: #fff
+		.col-md-4
+			flex-direction: column
+			text-align: left
+			justify-content: flex-start
+
+			h4 
+				font-size: 24px
+			p 
+				text-align: left
+				margin-left: 0
+				font-weight: 300
+				padding: 3px 0
+				font-size: 16px
+footer 
+	margin-top: -5px
+	color: #fff
+	background: #000
+	padding: 50px 0
+
+	.container-fluid
+		width: 60%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		img:hover 
+			transform: scale(1.1)
+		img 
+			max-width: 150px
+			transition: all 0.5s 
+		.menu 
+			width: 100%
+			ul
+				justify-content: center
+				li 
+					margin: 10px
+					a 
+						color: #fff
+					
+	.bionica 
+		display: flex
+		align-items: center
+		flex-direction: column
+
+		a 
+			font-size: 12px
+			color: #fff
+			text-decoration: none
+			font-size: 12px
+			line-height: 13px
+		img 
+
+			max-width: 120px
+			margin-left: 10px
+			//transition: all 0.5s 
+footer .menu li:last-child a:before
+	font-family: 'icomoon' 
+	content: "\ea91"
+	font-size: 18px
+footer .menu li:last-child:hover a:before
+	color: $red
+footer .menu li:last-child a:hover 
+	border-bottom: none	
+
+	
+#scroll::-webkit-scrollbar-track
+	background-color: #e2e2e2
+	
+
+
+#scroll::-webkit-scrollbar
+
+	width: 4px
+	background-color: #e2e2e2
+	height: 4px
+	
+	
+
+
+#scroll::-webkit-scrollbar-thumb
+	width: 6px
+	background-color: #e1dee2
+	border: 1px solid #c1bcc4
+
+footer .bionica img 
+	margin-left: 0
+
+//////news///////////////
+
+.news 
+	padding-top: 150px
+
+	.col-md-12,
+	.col-md-4,
+	.col-md-6
+		
+		.img 
+			width: 100%
+			position: relative
+		img 
+			width: 100%
+
+		
+			z-index: -1
+			
+		.short-description 
+			position: absolute
+			padding-left: 5%
+			padding-right: 5%
+			padding-top: 2%
+			
+		
+			width: 100%
+			min-height: 30%
+			background: #000
+			color: #fff
+			bottom: 0
+			transition: all 1s
+			display: flex
+			align-items: center
+			a 
+				color: #fff
+				text-decoration: none
+		.date
+			color: $red
+		.title 
+			font-weight: bold
+			padding-bottom: 10px
+		p 
+			position: relative
+			font-size: 14px
+			.owerlay 
+				width: 100%
+				height: 100%
+				position: absolute
+				background: transparent
+				background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+				background: -webkit-gradient(left bottom, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.1)))
+				background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+				background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+				background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+				background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+				top: 0
+				left: 0
+				transition: all 1s
+				// opacity: 0.5
+.news .col-md-12:hover .short-description
+	min-height: 100%
+	background: rgba(0, 0, 0, 0.8)
+	cursor: pointer
+	.owerlay 
+		opacity: 0
+.news .col-md-4:hover .short-description
+	min-height: 100%
+	background: rgba(0, 0, 0, 0.8)
+	cursor: pointer
+	.owerlay
+		opacity: 0
+.news .col-md-6:hover .short-description
+	min-height: 100%
+	background: rgba(0, 0, 0, 0.8)
+	cursor: pointer
+	.owerlay
+		opacity: 0
+	p 
+		overflow: visible
+		max-height: 100px
+
+.news .col-md-4
+	text-align: left
+	img
+		padding-bottom: 0
+
+
+	.owerlay 
+		width: 100%
+		height: 100%
+		position: absolute
+		background: transparent
+		background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+		background: -webkit-gradient(left bottom, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.1)))
+		background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+		background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+		background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+		top: 0
+		left: 0
+		transition: all 1s
+	p 
+		display: none
+	.title
+		
+	.title
+		font-size: 14px
+		text-align: left
+	.date 
+		text-align: left
+
+.news .single-news 
+	margin-top: 50px
+.news .col-md-6
+	margin-bottom: 50px
+	.title 
+		font-size: 14px
+		.owerlay 
+			width: 100%
+			height: 100%
+			position: absolute
+			background: transparent
+			background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+			background: -webkit-gradient(left bottom, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(100%, rgba(0, 0, 0, 0.1)))
+			background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+			background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+			background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%)
+			top: 0
+			left: 0
+			transition: all 1s
+			display: none
+	p 
+		
+		max-height: 33px
+		overflow: hidden
+
+.pages
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-bottom: 100px
+	.page 
+		display: flex
+		align-items: center
+		a 
+			color: #000
+			text-decoration: none
+		a.active 
+			font-weight: bold
+		.arrow
+			margin-left: 30px 
+			font-size: 20px
+	.btn-next-page 
+		width: 200px
+		height: 50px
+		display: flex
+		justify-content: center
+		align-items: center
+		background: $red
+		border-radius: 5px
+		transition: all 0.5s
+		cursor: pointer
+		a 
+			color: #fff	
+			text-decoration: none
+	.btn-next-page:hover
+		transform: scale(1.1)
+//////single-article ////
+.text-with-img 
+	display: flex
+	img 
+		width: 30%
+		height: 300px
+	p 
+		padding-right: 50px
+.text-with-two-img 
+	display: flex
+	.images
+		display: flex
+		flex-direction: column
+		width: 30%
+		img 
+			margin-bottom: 10px
+		img:first-child
+			height: 200px
+		img:last-child
+			height: 300px
+
+	p 
+		padding-left: 50px
+		
+.btn-next-prev
+	margin-bottom: 60px
+	margin-top: 50px
+	display: flex
+	justify-content: space-between
+	a 
+		text-decoration: none
+		color: #000
+		display: flex
+		cursor: pointer
+		font-weight: bold
+
+	.prev,
+	.next 
+		
+	.prev 
+		.arrow
+			margin-right: 30px
+
+	.next
+		.arrow
+			margin-left: 30px
+.all-page 
+	margin-bottom: 50px
+	a 
+		text-decoration: none
+		color: #000
+		font-weight: bold
+.title-article 
+	text-align: center
+	font-size: 24px
+.date-article 
+	text-align: right
+	position: relative
+	top: -31px
+	color: $red
+	font-weight: bold
+.autor
+	text-align: right
+	font-style: italic
+	font-weight: bold
+.next.non-active  
+	opacity: 0.8
+	a
+		font-weight: 400
+.text-news-with-two-img
+	flex-direction: column
+	.images
+		display: flex
+		flex-direction: row
+		width: 100%
+		justify-content: space-between
+		img:first-child 
+			height: 300px
+			width: 48%
+		img:last-child
+			height: 300px
+			width: 48%
+	p 
+		padding-left: 0
+.arhiv 
+	h2 
+		font-weight: 400
+	.row
+		margin-bottom: 50px
+
+	.col-md-3 
+		margin-bottom: 40px
+		a 
+			width: 100%
+			text-decoration: none
+		img
+			width: 100%
+		.btn-year 
+			width: 100%
+			background: #33CCCC
+			height: 50px
+			color: #fff
+			text-align: center
+			padding-top: 15px
+	.col-md-3:hover .btn-year 
+		background: $red
+	
+.crumbs
+	color: #000
+	padding-right: 15px
+	span 
+		padding-left: 5px
+.crumbs:hover 
+	text-decoration: none
+	color: #000
+.crumbs-box  
+	margin-bottom: 50px
+.content-magazin
+	.col-md-4
+		display: flex
+		flex-direction: column
+		align-items: center
+		button 
+			margin: 30px auto
+			width: 200px
+			height: 50px
+			background: $red
+			border: none
+			border-radius: 5px
+			cursor: pointer
+			transition: all 0.5s
+			a 
+				color: #fff
+				text-decoration: none
+		button:hover 
+			transform: scale(1.1)
+
+.accordion
+ 	width: 100%
+ 	min-height: 300px
+ 	
+.accordion-item 
+	font-weight: bold		
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15)
+	color: #000
+	cursor: pointer 
+	padding: 20px
+	margin-bottom: 1px
+	cursor: pointer
+	margin-bottom: 30px
+	border-radius: 5px
+.accordion-item.open
+	box-shadow: none
+	margin-bottom: 0
+	border-bottom: 0px
+	color: $red
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15)
+
+	
+
+.accordion-item.open .type 
+	float: right
+	span:first-child
+		display: block
+	span:last-child
+		display: none
+	
+	
+	
+.accordion-item .type 
+	float: right
+	span:first-child
+		display: none
+	
+	
+div.data 		
+	padding: 20px	
+	line-height: 140%
+	display: none
+	box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.15)
+	z-index: 15
+	background: #fff
+	margin-top: -6px
+	margin-bottom: 30px
+	border-radius: 5px
+// div.data:nth-child(2)	
+// 	display: block
+
+.logo 
+	padding-left: 90px	
+
+.news-pagination .row 
+	display: none
+.news-pagination .row.active 
+	display: flex
+#next_btn.active 
+	display: flex
+#next_btn
+	display: none
 
 
 
